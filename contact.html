@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERN Dev Portfolio | Contact</title>
+</head>
+<style>
+    body {
+        animation: fadein 1.5s ease-in-out;
+    }
+
+    h1 {
+        text-align: center;
+        text-shadow: 2px 2px 4px black;
+        animation: slidedown 2s ease;
+    }
+
+    nav {
+        text-align: center;
+        word-spacing: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        transition: 0.4s;
+    }
+
+    h2 {
+        text-align: center;
+        animation: glow 2s infinite alternate;
+    }
+
+    h3 {
+        text-indent: 60px;
+    }
+
+    p {
+        text-indent: 50px;
+        animation: fadeup 2s ease;
+    }
+
+    ul {
+        text-indent: 15px;
+    }
+
+    ul li {
+        transition: 0.4s;
+    }
+
+    ul li:hover {
+        transform: translateX(15px);
+        color: blue;
+    }
+
+    footer {
+        letter-spacing: 2px;
+        text-align: center;
+        color: white;
+        background-color: black;
+        padding: 15px;
+        animation: footerup 1.5s;
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slidedown {
+        from {
+            transform: translateY(-80px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeup {
+        from {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes footerup {
+        from {
+            transform: translateY(100px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+     @keyframes glow {
+        from{
+            text-shadow: 0 0 5px blue;
+        }
+        to{
+            text-shadow: 0 0 20px blue,0 0 40px skyblue;
+        }
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1>Connect with Me</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Me</a> |
+            <a href="skills.html">Skills</a> |
+            <a href="projects.html">Projects</a> |
+            <a href="contact.html"><b>Contact Me</b></a>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <section>
+            <h2>Get In Touch</h2>
+            <p>I am actively seeking internship opportunities, junior developer roles, and freelance project
+                collaborations. Let's talk about how I can bring full-stack value to your development team.</p>
+
+            <h3>Professional Channels</h3>
+            <ul>
+                <li><b>Email : </b> jayasuryam2006gmail.com</li>
+                <li><b>GitHub : </b><a href="https://github.com/jayast" target="_blank">Github Profile</a></li>
+                <li><b>LinkedIn : </b> <a href="https://www.linkedin.com/in/jayasurya-m-19a7a9361"
+                        target="_blank">LinkedIN Profile</a></li>
+                <li><b>Location : </b> Tamil Nadu, India</li>
+            </ul>
+
+            <p>Go back to the <a href="index.html">Home Page</a> to restart your tour.</p>
+        </section>
+    </main>
+
+    <hr>
+    <footer>
+        <p>&copy; 2026 MERN Stack Developer Portfolio. Built with HTML,CSS.</p>
+    </footer>
+
+</body>
+
+</html>

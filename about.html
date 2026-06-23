@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERN Dev Portfolio | About Me</title>
+</head>
+<style>
+    body {
+        animation: fadein 1.5s ease-in-out;
+    }
+
+    h1 {
+        text-align: center;
+        text-shadow: 2px 2px 4px black;
+        animation: slidedown 2s ease;
+    }
+
+    nav {
+        text-align: center;
+        word-spacing: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        transition: 0.4s;
+    }
+
+    nav a:hover {
+        color: blue;
+        letter-spacing: 2px;
+    }
+    h2 {
+        text-align: center;
+        animation: glow 2s infinite alternate;
+    }
+
+    p {
+        text-indent: 70px;
+        animation: fadeup 2s ease;
+    }
+
+    footer {
+        letter-spacing: 2px;
+        text-align: center;
+        color: white;
+        background-color: black;
+        padding: 15px;
+        animation: footerup 1.5s;
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slidedown {
+        from {
+            transform: translateY(-80px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    @keyframes fadeup {
+        from{
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+     @keyframes footerup {
+        from{
+            transform: translateY(100px);
+            opacity: 0;
+        }
+        to{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+     @keyframes glow {
+        from{
+            text-shadow: 0 0 5px blue;
+        }
+        to{
+            text-shadow: 0 0 20px blue,0 0 40px skyblue;
+        }
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html"><b>About Me</b></a> |
+            <a href="skills.html">Skills</a> |
+            <a href="projects.html">Projects</a> |
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <section>
+            <h2>My Developer Journey</h2>
+            <p>My tech journey started with curiosity about how large-scale platforms handle millions of users. This led
+                me straight to JavaScript, where I fell in love with building complete applications from the database
+                all the way to the browser interface.</p>
+            <p>As a beginner full-stack developer, I focus heavily on writing readable code, building reusable
+                components, and learning industry standard architectures like RESTful APIs and MVC patterns.</p>
+        </section>
+
+        <section>
+            <h2>My Development Philosophy</h2>
+            <p>I believe code should not just work—it should be maintainable and efficient. I focus on understanding
+                user requirements thoroughly, planning data models before writing schemas, and ensuring UI
+                responsiveness across desktops and mobile phones.</p>
+            <p>Ready to look at my technical expertise? Explore my <a href="skills.html">Technical Skills Page</a>.</p>
+        </section>
+    </main>
+
+    <hr>
+    <footer>
+        <p>&copy; 2026 MERN Stack Developer Portfolio. Built with HTML,CSS.</p>
+    </footer>
+
+</body>
+
+</html>

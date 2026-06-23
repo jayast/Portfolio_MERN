@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERN Dev Portfolio | Projects</title>
+</head>
+<style>
+    body {
+        animation: fadein 1.5s ease-in-out;
+    }
+
+    h1 {
+        text-align: center;
+        text-shadow: 2px 2px 4px black;
+        animation: slidedown 2s ease;
+    }
+
+    nav {
+        text-align: center;
+        word-spacing: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        transition: 0.4s;
+    }
+
+    nav a:hover {
+        color: blue;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        text-align: center;
+        animation: glow 2s infinite alternate;
+    }
+
+    p {
+        text-indent: 70px;
+        animation: fadeup 2s ease;
+    }
+
+    footer {
+        letter-spacing: 2px;
+        text-align: center;
+        color: white;
+        background-color: black;
+        padding: 15px;
+        animation: footerup 1.5s;
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slidedown {
+        from {
+            transform: translateY(-80px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    @keyframes fadeup {
+        from{
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+     @keyframes footerup {
+        from{
+            transform: translateY(100px);
+            opacity: 0;
+        }
+        to{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+     @keyframes glow {
+        from{
+            text-shadow: 0 0 5px blue;
+        }
+        to{
+            text-shadow: 0 0 20px blue,0 0 40px skyblue;
+        }
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1>My Projects</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Me</a> |
+            <a href="skills.html">Skills</a> |
+            <a href="projects.html"><b>Projects</b></a> |
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <section>
+            <h2>MERN Applications Built by Me</h2>
+            <p>Below are the foundational full-stack projects I have built to reinforce my MERN capabilities:</p>
+
+            <ol>
+                <li>
+                    <b>Full-Stack Task Manager App</b>
+                    <p>A CRUD application built with React on the frontend and Node/Express on the backend. It allows
+                        users to create, read, update, and delete tasks, storing all information dynamically inside a
+                        MongoDB database.</p>
+                </li>
+                <li>
+                    <b>E-Commerce Product Catalog API</b>
+                    <p>A robust RESTful API that handles product inventory data models using Mongoose schemas. It
+                        features server-side route filtering, search features, and error handling tested using Postman.
+                    </p>
+                </li>
+                <li>
+                    <b>Thalapathy Vijay Fansite Portal</b>
+                    <p>A multi-page descriptive interface built using structural, semantic HTML layouts to organize
+                        regional media data.</p>
+                </li>
+            </ol>
+            <p>Want to work together on a full-stack project? Head over to my <a href="contact.html">Contact Page</a>.
+            </p>
+        </section>
+    </main>
+
+    <hr>
+    <footer>
+        <p>&copy; 2026 MERN Stack Developer Portfolio. Built with HTML,CSS.</p>
+    </footer>
+
+</body>
+
+</html>

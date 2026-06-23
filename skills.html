@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERN Dev Portfolio | Skills</title>
+</head>
+<style>
+    body {
+        animation: fadein 1.5s ease-in-out;
+    }
+
+    h1 {
+        text-align: center;
+        text-shadow: 2px 2px 4px black;
+        animation: slidedown 2s ease;
+    }
+
+    nav {
+        text-align: center;
+        word-spacing: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        transition: 0.4s;
+    }
+
+    nav a:hover {
+        color: blue;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        text-align: center;
+        animation: glow 2s infinite alternate;
+    }
+
+    p {
+        text-indent: 70px;
+        animation: fadeup 2s ease;
+        line-height: 2.5;
+    }
+
+    ul {
+        text-indent: 10px;
+    }
+    ul li{
+        transition: 0.4s;
+    }
+    ul li:hover{
+        transform: translateX(15px);
+        color: blue;
+    }
+
+    footer {
+        letter-spacing: 2px;
+        text-align: center;
+        color: white;
+        background-color: black;
+        padding: 15px;
+        animation: footerup 1.5s;
+    }
+
+    #skills {
+        line-height: 2;
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slidedown {
+        from {
+            transform: translateY(-80px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    @keyframes fadeup {
+        from{
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+     @keyframes footerup {
+        from{
+            transform: translateY(100px);
+            opacity: 0;
+        }
+        to{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+     @keyframes glow {
+        from{
+            text-shadow: 0 0 5px blue;
+        }
+        to{
+            text-shadow: 0 0 20px blue,0 0 40px skyblue;
+        }
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1>Technical Skills</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Me</a> |
+            <a href="skills.html"><b>Skills</b></a> |
+            <a href="projects.html">Projects</a> |
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <section>
+            <h2>The MERN Technology Stack</h2>
+            <p>Here are the primary technologies I use daily to build full-stack web applications:</p>
+            <ul id="skills">
+                <li><b>M - MongoDB:</b> NoSQL Database, Document storage, Mongoose ODM schemas</li>
+                <li><b>E - Express.js:</b> Lightweight server framework, Custom middleware backend logic</li>
+                <li><b>R - React.js:</b> Component-based UI, Single Page Apps, Hooks, State Management</li>
+                <li><b>N - Node.js:</b> Server-side JavaScript runtime environment, NPM ecosystem</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Additional Tools & Core Competencies</h2>
+            <ul id="skills">
+                <li><b>Languages:</b> JavaScript (ES6+), HTML5, CSS3</li>
+                <li><b>Tools & Workflows:</b> Git, GitHub, Postman API Testing</li>
+                <li><b>Concepts:</b> CRUD Operations, RESTful API Development, User Authentication</li>
+            </ul>
+            <p>See how I implement these technologies in my <a href="projects.html">Projects Page</a>.</p>
+        </section>
+    </main>
+
+    <hr>
+    <footer>
+        <p>&copy; 2026 MERN Stack Developer Portfolio. Built with HTML,CSS.</p>
+    </footer>
+
+</body>
+
+</html>
