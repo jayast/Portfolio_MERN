@@ -11,8 +11,19 @@
         animation: fadein 1.5s ease-in-out;
     }
 
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: #5276ec;
+        color: white;
+        flex-wrap: wrap;
+    }
+
     h1 {
         text-align: center;
+        padding: 10px;
+        margin: 0px;
         text-shadow: 2px 2px 4px black;
         animation: slidedown 2s ease;
     }
@@ -20,6 +31,7 @@
     nav {
         text-align: center;
         word-spacing: 20px;
+        padding: 10px;
     }
 
     nav a {
@@ -29,7 +41,7 @@
     }
 
     nav a:hover {
-        color: blue;
+        color: white;
         letter-spacing: 2px;
     }
 
@@ -47,12 +59,19 @@
     ul {
         text-indent: 10px;
     }
-    ul li{
+
+    ul li {
         transition: 0.4s;
     }
-    ul li:hover{
+
+    ul li:hover {
         transform: translateX(15px);
         color: blue;
+    }
+    .table{
+        margin: 30px;
+        margin-left: 90px;
+        text-indent: 40px;
     }
 
     footer {
@@ -89,32 +108,38 @@
             opacity: 1;
         }
     }
+
     @keyframes fadeup {
-        from{
+        from {
             opacity: 0;
             transform: translateY(40px);
         }
-        to{
+
+        to {
             opacity: 1;
             transform: translateY(0);
         }
     }
-     @keyframes footerup {
-        from{
+
+    @keyframes footerup {
+        from {
             transform: translateY(100px);
             opacity: 0;
         }
-        to{
+
+        to {
             transform: translateY(0);
             opacity: 1;
         }
     }
-     @keyframes glow {
-        from{
+
+    @keyframes glow {
+        from {
             text-shadow: 0 0 5px blue;
         }
-        to{
-            text-shadow: 0 0 20px blue,0 0 40px skyblue;
+
+        to {
+            text-shadow: 0 0 20px blue, 0 0 40px skyblue;
         }
     }
 </style>
@@ -132,30 +157,53 @@
         </nav>
     </header>
     <hr>
+    <h2>The MERN Technology Stack</h2>
+    
+    <table class="table" border="3" cellpadding="25">
+        <tr>
+            <th colspan="3">Here are the primary technologies I use daily to build full-stack web applications:</th>
+        </tr>
+        <tr>
+            <td><img src="./img/s1.jpeg" alt="" width="70px" height="40px"></td>
+            <td><b>M - MongoDB:</b></td>
+            <td> NoSQL Database, Document storage, Mongoose ODM schemas</td>
+        </tr>
+        <tr>
+            <td><img src="./img/s2.png" alt=""  width="70px" height="40px"></td>
+            <td><b>E - Express.js:</b></td>
+            <td> Lightweight server framework, Custom middleware backend logic</td>
+        </tr>
+        <tr>
+            <td><img src="./img/s3.png" alt=""  width="70px" height="40px"></td>
+            <td><b>R - React.js:</b></td>
+            <td>Component-based UI, Single Page Apps, Hooks, State Management</td>
+        </tr>
+        <td><img src="./img/s4.jpeg" alt=""  width="70px" height="40px"></td>
+        <td><b>N - Node.js:</b></td>
+        <td>Server-side JavaScript runtime environment, NPM ecosystem</td>
+    </table><br>
 
-    <main>
-        <section>
-            <h2>The MERN Technology Stack</h2>
-            <p>Here are the primary technologies I use daily to build full-stack web applications:</p>
-            <ul id="skills">
-                <li><b>M - MongoDB:</b> NoSQL Database, Document storage, Mongoose ODM schemas</li>
-                <li><b>E - Express.js:</b> Lightweight server framework, Custom middleware backend logic</li>
-                <li><b>R - React.js:</b> Component-based UI, Single Page Apps, Hooks, State Management</li>
-                <li><b>N - Node.js:</b> Server-side JavaScript runtime environment, NPM ecosystem</li>
-            </ul>
-        </section>
+    <table class="table" border="3" cellpadding="25">
+        <tr>
+            <th colspan="3">Additional Tools & Core Competencies</th>
+        </tr>
+        <tr>
+            <td><img src="./img/s5.png" alt=""  width="70px" height="40px"></td>
+            <td><b>Languages:</b></td>
+            <td>JavaScript (ES6+), HTML5, CSS3</td>
+        </tr>
+        <tr>
+            <td><img src="./img/s6.png" alt=""  width="70px" height="40px"></td>
+            <td><b>Tools & Workflows:</b></td>
+            <td>Git, GitHub, Postman API Testing</td>
+        </tr>
+        <tr>
+            <td><img src="./img/s7.png" alt=""  width="70px" height="40px"></td>
+            <td><b>Concepts:</b></td>
+            <td>CRUD Operations, RESTful API Development, User Authentication</td>
+        </tr>
 
-        <section>
-            <h2>Additional Tools & Core Competencies</h2>
-            <ul id="skills">
-                <li><b>Languages:</b> JavaScript (ES6+), HTML5, CSS3</li>
-                <li><b>Tools & Workflows:</b> Git, GitHub, Postman API Testing</li>
-                <li><b>Concepts:</b> CRUD Operations, RESTful API Development, User Authentication</li>
-            </ul>
-            <p>See how I implement these technologies in my <a href="projects.html">Projects Page</a>.</p>
-        </section>
-    </main>
-
+    </table>
     <hr>
     <footer>
         <p>&copy; 2026 MERN Stack Developer Portfolio. Built with HTML,CSS.</p>

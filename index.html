@@ -9,16 +9,23 @@
 <style>
     body {
         animation: fadein 1.5s ease-in-out;
-        background: linear-gradient(-45deg, #ffffff, #dfe9f3, #c9d6ff);
         background-size: 400% 400%;
-        animation: bgmove 10s infinite;
         flex-wrap: wrap;
     }
-
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: #5276ec;
+        color: white;
+        flex-wrap: wrap;
+    }
     h1 {
         text-align: center;
         text-shadow: 2px 2px 4px black;
         animation: slidedown 2s ease;
+        padding: 10px;
+        margin: 0px;
     }
 
     h2 {
@@ -29,7 +36,9 @@
     nav {
         text-align: center;
         word-spacing: 20px;
+        padding: 10px;
     }
+
 
     nav a {
         text-decoration: none;
@@ -38,24 +47,25 @@
     }
 
     nav a:hover {
-        color: blue;
+        color: white;
         letter-spacing: 2px;
     }
 
     .sub img {
         width: 150px;
         height: 150px;
-        border-radius: 50%;
-        border: 4px solid blue;
+        border-radius: 20%;
+        border: 2px solid blue;
         display: block;
         margin: 20px auto;
         box-shadow: 2px 2px 8px black;
         animation: zoomimage 2s ease;
         transition: 0.5s;
+        animation: floatimage 3s ease-in-out infinite;
     }
 
     .sub img:hover {
-        border: 5px solid black;
+        border: 3px solid black;
         border-radius: 90px;
         transform: scale(1.15) rotate(5deg);
     }
@@ -63,10 +73,6 @@
     .sub {
         width: 80%;
         margin: auto;
-    }
-
-    .sub img {
-        animation: floatimage 3s ease-in-out infinite;
     }
 
     p {
@@ -194,17 +200,6 @@
             text-shadow: 0 0 20px blue, 0 0 40px skyblue;
         }
     }
-    @keyframes bgmove {
-        0%{
-            background-position: 0% 50%;
-        }
-        50%{
-            background-position: 100% 50%;
-        }
-        100%{
-            background-position: 0% 50%;
-        }
-    }
 </style>
 
 <body>
@@ -223,7 +218,7 @@
 
     <main class="sub">
         <section>
-            <img src="/tom.jpeg" alt="t img">
+            <img src="./img/tom.jpeg" alt="img">
             <h2>Hi, I am a Full-Stack Web Developer</h2>
             <p>Welcome! I specialize in building web applications using the <b>MERN Stack</b> (MongoDB, Express.js,
                 React, and Node.js). I enjoy turning complex ideas into functional, clean, and interactive digital

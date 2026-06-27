@@ -11,8 +11,19 @@
         animation: fadein 1.5s ease-in-out;
     }
 
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: #5276ec;
+        color: white;
+        flex-wrap: wrap;
+    }
+
     h1 {
         text-align: center;
+        padding: 10px;
+        margin: 0px;
         text-shadow: 2px 2px 4px black;
         animation: slidedown 2s ease;
     }
@@ -20,6 +31,7 @@
     nav {
         text-align: center;
         word-spacing: 20px;
+        padding: 10px;
     }
 
     nav a {
@@ -29,18 +41,45 @@
     }
 
     nav a:hover {
-        color: blue;
+        color: white;
         letter-spacing: 2px;
     }
 
     h2 {
+        margin-top: 0px;
         text-align: center;
         animation: glow 2s infinite alternate;
     }
 
-    p {
-        text-indent: 70px;
-        animation: fadeup 2s ease;
+    .category {
+        padding: 20px;
+    }
+
+    .grid-category {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .grid-category:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .grid {
+        background: #f4f4f6;
+        border-radius: 15px;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+        transition: 0.4s;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .grid:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
     }
 
     footer {
@@ -73,32 +112,38 @@
             opacity: 1;
         }
     }
+
     @keyframes fadeup {
-        from{
+        from {
             opacity: 0;
             transform: translateY(40px);
         }
-        to{
+
+        to {
             opacity: 1;
             transform: translateY(0);
         }
     }
-     @keyframes footerup {
-        from{
+
+    @keyframes footerup {
+        from {
             transform: translateY(100px);
             opacity: 0;
         }
-        to{
+
+        to {
             transform: translateY(0);
             opacity: 1;
         }
     }
-     @keyframes glow {
-        from{
+
+    @keyframes glow {
+        from {
             text-shadow: 0 0 5px blue;
         }
-        to{
-            text-shadow: 0 0 20px blue,0 0 40px skyblue;
+
+        to {
+            text-shadow: 0 0 20px blue, 0 0 40px skyblue;
         }
     }
 </style>
@@ -117,6 +162,37 @@
     </header>
     <hr>
 
+    <main class="category">
+        <section>
+            <div class="title">
+                <h2>MERN Applications Built by Me</h2>
+                <p>Below are the foundational full-stack projects I have built to reinforce my MERN capabilities:</p>
+            </div>
+        </section> <br>
+        <section class="grid-category">
+
+            <div class="grid">
+                <b>Full-Stack Task Manager App</b>
+                <p>A CRUD application built with React on the frontend and Node/Express on the backend. It allows
+                    users to create, read, update, and delete tasks, storing all information dynamically inside a
+                    MongoDB database.</p>
+                <a href="">View Project</a>
+            </div>
+            <div class="grid">
+                <b>E-Commerce Product Catalog API</b>
+                <p>A robust RESTful API that handles product inventory data models using Mongoose schemas. It
+                    features server-side route filtering, search features, and error handling tested using Postman.</p>
+                <a href="">View Project</a>
+            </div>
+            <div class="grid">
+                <b>Thalapathy Vijay Fansite Portal</b>
+                <p>A multi-page descriptive interface built using structural, semantic HTML layouts to organize
+                    regional media data.</p>
+                <a href="">View Project</a>
+            </div>
+        </section>
+    </main>
+    <!-- 
     <main>
         <section>
             <h2>MERN Applications Built by Me</h2>
@@ -144,7 +220,7 @@
             <p>Want to work together on a full-stack project? Head over to my <a href="contact.html">Contact Page</a>.
             </p>
         </section>
-    </main>
+    </main> -->
 
     <hr>
     <footer>
